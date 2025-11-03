@@ -6,10 +6,7 @@
 // - CPU, Memory, Network, Battery, GPU, System info
 // - Process listing, launching, killing
 // - File system inspection
-//
-// Author: Chinmay Chaudhari
-// Version: 0.2.0
-// License: MIT
+
 package main
 
 import (
