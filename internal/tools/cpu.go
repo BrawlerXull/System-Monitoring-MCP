@@ -8,6 +8,7 @@ import (
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 )
 
+
 func RegisterCPUTool(server *mcp.Server) {
 	mcp.AddTool(server, &mcp.Tool{
 		Name:        "get_cpu_usage",
@@ -18,8 +19,6 @@ func RegisterCPUTool(server *mcp.Server) {
 			return nil, nil, err
 		}
 		text := fmt.Sprintf("CPU Usage: %.2f%%", usage)
-		return &mcp.CallToolResult{
-			Content: []mcp.Content{&mcp.TextContent{Text: text}},
-		}, map[string]any{"cpu_percent": usage}, nil
+		return TextResult(text, map[string]any{"cpu_percent": usage}), nil, nil
 	})
 }

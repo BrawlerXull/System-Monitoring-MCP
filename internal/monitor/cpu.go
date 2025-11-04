@@ -2,8 +2,9 @@ package monitor
 
 import (
 	"context"
-	"github.com/shirou/gopsutil/v3/cpu"
 	"time"
+
+	"github.com/shirou/gopsutil/v3/cpu"
 )
 
 func GetCPUUsage(ctx context.Context) (float64, error) {
