@@ -14,4 +14,6 @@ func RegisterTools(server *mcp.Server) {
 	tools.RegisterGPUTool(server)
 	tools.RegisterSystemInfoTool(server)
 	tools.RegisterFileTools(server)
+	tools.RegisterProcessTools(server)
+	tools.RegisterBatteryTool(server)
 }
