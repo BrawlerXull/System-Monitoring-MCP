@@ -66,7 +66,7 @@ go build -o system-monitor-mcp-go main.go
 3. Restart Claude Desktop.
 
 4. Ask Claude something like:
-   > Ask system-monitor-go to show my current CPU usage.
+   > Show my current CPU usage.
 
 If your MCP server is running correctly, Claude will invoke the `get_cpu_usage` tool and display the result.
 
@@ -76,11 +76,11 @@ If your MCP server is running correctly, Claude will invoke the `get_cpu_usage` 
 
 | Prompt | Description |
 |--------|-------------|
-| "Ask system-monitor-go to show my current CPU usage." | Calls `get_cpu_usage` |
-| "Use system-monitor-go to check memory usage stats." | Calls `get_memory_usage` |
-| "Ask system-monitor-go to list top 5 processes by CPU usage." | Calls `list_processes` |
-| "Ask system-monitor-go to kill process with PID 1234." | Calls `kill_process` |
-| "Use system-monitor-go to list files in ~/Documents." | Calls `list_files` |
+| "Show my current CPU usage." | Calls `get_cpu_usage` |
+| "Check memory usage stats." | Calls `get_memory_usage` |
+| "List top 5 processes by CPU usage." | Calls `list_processes` |
+| "Kill process with PID 1234." | Calls `kill_process` |
+| "List files in ~/Documents." | Calls `list_files` |
 
 ---
 
